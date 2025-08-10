@@ -59,6 +59,7 @@ const HeroSection = () => {
       {/* Futuristic Background Overlay */}
       <div className="absolute inset-0 bg-gradient-to-br from-background via-background to-secondary opacity-90"></div>
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,hsl(var(--primary))_0%,transparent_50%)] opacity-10"></div>
+      <div className="absolute inset-0 bg-[radial-gradient(600px_400px_at_50%_55%,hsl(var(--brand)/0.15),transparent_60%)] opacity-20"></div>
       
       <div className="container mx-auto px-6 relative z-10">
         <div className="fade-in-up flex flex-col items-center justify-center gap-12 lg:gap-20">
@@ -97,10 +98,10 @@ const HeroSection = () => {
                   href={link.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="glass-panel p-3 hover-glow transition-all duration-300"
+                  className="glass-panel p-3 hover-glow accent-glow transition-all duration-300"
                   title={link.label}
                 >
-                  <link.icon size={20} className="text-primary" />
+                  <link.icon size={20} className="text-brand" />
                 </a>
               ))}
             </div>
@@ -109,7 +110,7 @@ const HeroSection = () => {
             <Button 
               onClick={scrollToProjects}
               size="lg"
-              className="font-poppins font-semibold text-lg px-8 py-4 bg-primary hover:bg-primary/90 text-primary-foreground hover-lift mt-6 w-full lg:w-auto"
+              className="font-poppins font-semibold text-lg px-8 py-4 bg-primary hover:bg-primary/90 text-primary-foreground hover-lift mt-6 w-full lg:w-auto ring-brand"
             >
               View My Work
             </Button>
