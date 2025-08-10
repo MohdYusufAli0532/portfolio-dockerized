@@ -6,7 +6,7 @@ const Footer = () => {
   const socialLinks = [
     {
       icon: Linkedin,
-      href: 'https://www.linkedin.com/in/mohd-yusuf-ali',
+      href: 'https://www.linkedin.com/in/mohd-yusuf-ali-365b24248/',
       label: 'LinkedIn'
     },
     {
