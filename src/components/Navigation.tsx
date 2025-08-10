@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
+import ThemeToggle from '@/components/ThemeToggle';
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -75,6 +76,7 @@ const Navigation = () => {
               </button>
             ))}
             
+            <ThemeToggle />
             <Button 
               onClick={downloadResume}
               className="hover-lift font-medium bg-primary hover:bg-primary/90 text-primary-foreground"
@@ -83,8 +85,9 @@ const Navigation = () => {
             </Button>
           </div>
           
-          {/* Mobile menu button */}
-          <div className="md:hidden">
+          {/* Mobile actions */}
+          <div className="md:hidden flex items-center gap-2">
+            <ThemeToggle />
             <Button 
               onClick={downloadResume}
               size="sm"

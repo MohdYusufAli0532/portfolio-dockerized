@@ -80,10 +80,48 @@
 
   /* Light mode fallback (though we're dark-first) */
   .light {
-    --background: 0 0% 98%;
+    --background: 0 0% 100%;
     --foreground: 0 0% 10%;
-    --card: 0 0% 100% / 0.9;
-    --primary: 0 0% 20%; /* Dark gray for light mode */
+
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 10%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 10%;
+
+    --primary: 0 0% 10%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 0 0% 98%;
+    --secondary-foreground: 0 0% 10%;
+
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 40%;
+
+    --accent: 0 0% 100%;
+    --accent-foreground: 0 0% 10%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    /* Black borders on white */
+    --border: 0 0% 0% / 0.18;
+    --input: 0 0% 0% / 0.18;
+    --ring: 24 95% 55%; /* ring follows brand in light */
+
+    /* Light glass and shadows */
+    --glass-bg: 0 0% 100% / 0.65;
+    --glass-border: 0 0% 0% / 0.12;
+    --shadow-glow: 0 0 30px hsl(0 0% 0% / 0.08);
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(0 0% 0% / 0.9), hsl(0 0% 0% / 0.7));
+    --gradient-bg: linear-gradient(135deg, hsl(0 0% 100%), hsl(0 0% 98%));
+
+    /* Brand Accent (Playful Orange) */
+    --brand: 24 95% 55%;
+    --brand-foreground: 0 0% 100%;
+    --gradient-brand: linear-gradient(135deg, hsl(var(--brand) / 0.12), transparent);
   }
 }
 
