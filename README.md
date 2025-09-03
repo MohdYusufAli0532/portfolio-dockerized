@@ -1,96 +1,108 @@
-# 🚀 Portfolio (Dockerized)
+# 🚀 Portfolio (Dockerized + CI/CD)
 
 A modern **developer portfolio website** built with **React, TypeScript, Vite, TailwindCSS, and shadcn-ui**.  
-This project is fully **containerized with Docker** for seamless deployment across any environment.
+This project is fully **containerized with Docker** and can be integrated with **Jenkins** for CI/CD automation.
 
 ---
 
 ## 🌐 Live Demo
-
-👉 [Your Portfolio](#) _(update with your actual deployment link)_
+👉 [Your Portfolio](#) *(update with your actual deployment link)*
 
 ---
 
 ## 📦 Tech Stack
-
-- **React + Vite** – Frontend framework
-- **TypeScript** – Strongly typed development
-- **TailwindCSS** – Utility-first styling
-- **shadcn-ui** – Prebuilt modern UI components
-- **Docker** – Containerized deployment
+- ⚛️ **React + Vite** – Fast and modern frontend framework  
+- 🟦 **TypeScript** – Strongly typed development  
+- 🎨 **TailwindCSS** – Utility-first styling  
+- 🧩 **shadcn-ui** – Prebuilt modern UI components  
+- 🐳 **Docker** – Containerized deployment  
+- ⚙️ **Jenkins (optional)** – Continuous Integration & Deployment  
 
 ---
 
 ## 🛠️ Getting Started
 
 ### 1️⃣ Clone the repository
-
 ```bash
 git clone https://github.com/mohdyusufali/portfolio-dockerized.git
 cd portfolio-dockerized
 ```
 
 ### 2️⃣ Install dependencies
-
 Make sure you have **Node.js (LTS)** and **npm** installed.
-
 ```bash
 npm install
 ```
 
 ### 3️⃣ Run locally
-
 ```bash
 npm run dev
 ```
-
-Your app will be available at 👉 [http://localhost:5173](http://localhost:5173)
+App will be available at 👉 [http://localhost:5173](http://localhost:5173)
 
 ---
 
 ## 🐳 Run with Docker
 
 ### Build Docker image
-
 ```bash
 docker build -t portfolio-app .
 ```
 
 ### Run container
-
 ```bash
-docker run -d -p 3000:3000 portfolio-app
+docker run -d -p 3000:80 portfolio-app
 ```
 
 Now visit 👉 [http://localhost:3000](http://localhost:3000)
 
 ---
 
-## 📤 Deployment
+## 🔄 CI/CD with Jenkins (Optional)
 
-You can deploy this project using:
+This project can be integrated into a **Jenkins pipeline**:
 
-- **Docker** (on any VPS, AWS, Azure, GCP, etc.)
-- **Vercel / Netlify** (zero-config for React + Vite apps)
+1. Pull code from GitHub  
+2. Install dependencies (`npm install`)  
+3. Build the project (`npm run build`)  
+4. Build & push Docker image  
+5. Deploy container automatically  
+
+---
+
+## 📂 Project Structure
+```
+portfolio-dockerized/
+├── src/              # React components & pages
+├── public/           # Static assets
+├── Dockerfile        # Docker build file
+├── package.json      # Project metadata & dependencies
+├── vite.config.ts    # Vite configuration
+└── README.md         # Project documentation
+```
 
 ---
 
 ## ✨ Features
+✔️ Responsive & modern UI  
+✔️ Built with **React + TypeScript**  
+✔️ Styled with **TailwindCSS**  
+✔️ UI components from **shadcn-ui**  
+✔️ **Dockerized** for consistent deployment  
+✔️ **CI/CD ready with Jenkins**  
 
-- Responsive & modern UI
-- Built with **React + TypeScript**
-- Styled with **TailwindCSS**
-- Component library: **shadcn-ui**
-- **Dockerized** for consistent deployment
+---
+
+## 🚀 Future Improvements
+- Add **GitHub Actions** workflows  
+- Deploy on **Kubernetes** cluster  
+- Add **dark/light theme toggle**  
+- Add **blog section**  
 
 ---
 
 ## 🤝 Contributing
-
-Feel free to **fork this repo**, raise issues, or submit PRs.
+Contributions are welcome!  
+Fork the repo, raise an issue, or submit a PR.
 
 ---
-
-## 📜 License
-
-This project is open-source under the **MIT License**.
